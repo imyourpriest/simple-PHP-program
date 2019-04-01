@@ -51,7 +51,7 @@ class Wksalprogram
     }
 }
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if(!empty($_POST['wage']) && !empty($_POST['hours'])) {
+    if(is_numeric($_POST['wage']) && is_numeric($_POST['hours'])) {
         $salary = Wksalprogram::calculateSalary($_POST['hours'], $_POST['wage']);
         echo '<script type="text/javascript">alert("Your total weekly salary is: $' . $salary . '");</script>';
     } else {
