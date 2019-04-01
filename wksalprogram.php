@@ -55,7 +55,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $salary = Wksalprogram::calculateSalary($_POST['hours'], $_POST['wage']);
         echo '<script type="text/javascript">alert("Your total weekly salary is: $' . $salary . '");</script>';
     } else {
-        echo '<script type="text/javascript">alert("Please make sure both fields are not empty.");</script>';
+        echo '<script type="text/javascript">alert("Please make sure both fields are not empty, and are only numbers.");</script>';
     }
 }
 ?>
