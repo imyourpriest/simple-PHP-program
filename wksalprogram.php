@@ -6,8 +6,8 @@ Just showing this wage button using PHP, 'tis but a simple salary webapp.
 </head>
 <body>
 <form align="center" method="post">
-<b>Your Hourly Wage:</b><input type="number" name="wage"><br>
-<b>Total Hours Worked Per Week:</b><input type="number" name="hours"><br>
+<b>Your Hourly Wage:</b><input type="text" name="wage"><br>
+<b>Total Hours Worked Per Week:</b><input type="text" name="hours"><br>
 <input type="submit" name="submit" value="calculate">
 </form>
 </body>
