@@ -26,24 +26,12 @@ Just showing this wage button using PHP, 'tis but a simple salary webapp.
  * @version  GIT: $id
  * @link     https://simple-salary-program.herokuapp.com/wksalprogram.php
  */
-    /**
-     * Wksalprogram
-     *
-     * PHP Version 7
-     *
-     * @category Class
-     * @package  Heroku
-     * @author   Caleb Priest <vinyl1225@gmail.com>
-     * @license  https://www.gnu.org/licenses/gpl-3.0.txt GNU/GPLv3
-     * @version  Release: 1.0
-     * @link     https://simple-salary-program.herokuapp.com/wksalprogram.php
-     */
 class Wksalprogram
 {
     /**
      * Calculates salary using hours and hourly pay
      *
-     * @return $result
+     * @return $salary
      */
     static function calculateSalary($hours, $rate)
     {
